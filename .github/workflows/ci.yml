@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'  # Устанавливаем JDK 17
-        distribution: 'adoptium'  # Заменили на 'adoptium' для актуальной версии JDK
+        distribution: 'temurin'  # Используем дистрибутив Temurin (Adoptium)
 
     - name: Cache Maven dependencies
       uses: actions/cache@v3  # Используем последнюю версию кэширования
