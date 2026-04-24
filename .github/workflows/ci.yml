@@ -20,6 +20,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'  # Устанавливаем JDK 17
+        distribution: 'adoptopenjdk'  # Указываем дистрибутив JDK (например, AdoptOpenJDK)
 
     - name: Cache Maven dependencies
       uses: actions/cache@v3  # Используем последнюю версию кэширования
