@@ -20,8 +20,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '17'  # Устанавливаем JDK 17
-        distribution: 'adoptopenjdk'  # Замените на 'adoptium' для актуальной версии JDK
-        cache: maven
+        distribution: 'adoptium'  # Заменили на 'adoptium' для актуальной версии JDK
 
     - name: Cache Maven dependencies
       uses: actions/cache@v3  # Используем последнюю версию кэширования
